@@ -27,21 +27,45 @@ Constraints
 
 
 function promotions(day, age) {
-    if (age <= 18, day = Weekday) {
-        console.log("12$")
+    if (day === "Weekday" && age <= 18) {
+        console.log("12$");
     }
 
-    else if (age <= 18, day = Weekend) {
-        console.log("15$")
+    else if (day === "Weekend" && age <= 18) {
+        console.log("15$");
     }
 
-    else if (age <= 18, day = Holiday) {
-        console.log("5$")
+    else if (day === "Holiday" && age <= 18) {
+        console.log("5$");
+    }
+
+    else if (day === "Weekday" && age <= 64 ) {
+        console.log("18$");
+    }
+
+    else if (day === "Weekend" && age <= 64) {
+        console.log("20$");
+    }
+
+    else if (day === "Holiday" && age <= 64) {
+        console.log("12$");
+    }
+
+    else if (day === "Weekday" && age <= 122) {
+        console.log("12$");
+    }
+
+    else if (day === "Weekday" && age <= 122) {
+        console.log("15");
+    }
+
+    else if (day === "Holiday" && age <= 122) {
+        console.log("10$");
     }
 
     else {
-        console.log("Error!")
+        console.log("Error!");
     }
 }
 
-promotions (Weekend, 20);
+promotions("Holiday", 99);
