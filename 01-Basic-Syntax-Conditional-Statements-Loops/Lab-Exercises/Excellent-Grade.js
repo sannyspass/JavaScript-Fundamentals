@@ -8,7 +8,7 @@ function solve(grade) {
         console.log("Excellent!");
     } else if (grade >= 2) {
         console.log("Bad.");
-    } else if (grade <= 2) {
+    } else {
         console.log("Fail.")
     }
 }
