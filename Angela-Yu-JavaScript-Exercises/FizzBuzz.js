@@ -1,4 +1,73 @@
+/* divisible by 3 = fizz
+divisible by 5 = buzz
+divisible by 3 & 5 = fizzbuzz*/
+
 let output = [];
+let count = 1;
+
+function fizzBuzz() {
+  if (count % 3 === 0 && count % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (count % 3 === 0) {
+console.log("Fizz");
+  } else if (count % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log("Error.");
+  }
+
+output.push(count);
+count++;
+console.log(output);
+} 
+
+fizzBuzz();
+
+
+
+
+
+
+/*function fizzBuzz () {
+  if (output <= 100) {
+   output.push(output ++);
+   console.log(output);
+  } else {
+   console.log("The end.")
+  }
+ }*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*let output = [];
 let count = 1;
 
 function fizzBuz() {
@@ -14,4 +83,4 @@ function fizzBuz() {
 
   count = count++;
   console.log(output);
-}
+}*/
