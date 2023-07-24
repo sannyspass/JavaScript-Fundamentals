@@ -13,10 +13,10 @@ console.log("Fizz");
   } else if (count % 5 === 0) {
     console.log("Buzz");
   } else {
-    console.log("Error.");
+    output.push(count);
   }
 
-output.push(count);
+
 count++;
 console.log(output);
 } 
