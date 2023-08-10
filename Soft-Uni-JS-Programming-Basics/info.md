@@ -1,0 +1,1 @@
+https://softuni.bg/trainings/2371/programming-basics-with-javascript-may-2019#lesson-12074
