@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page Test</title>
+</head>
+<body>
+    <h1>Login Page</h1>
+    <form>
+        <label for="userName">Username</label>
+        <input type="text" id="userName">
+        <laber for="password">Password</laber>
+        <input type="password" id="password">
+        <input type="button" value="Submit" onclick="login(this.form.userName.value, this.form.password.value)">
+    </form>
+
+    <script>
+        function login (userName, password) {
+            let passwordFromDB = 123; //In HTML, the password will log as a string, so use == instead of ===.
+            if (password == passwordFromDB) {
+               window.alert(`Hello, ${userName}. You are logged in.`);
+            } else {
+                window.alert(`Access denied.`);
+            }
+}
+    </script>
+</body>
+</html>
