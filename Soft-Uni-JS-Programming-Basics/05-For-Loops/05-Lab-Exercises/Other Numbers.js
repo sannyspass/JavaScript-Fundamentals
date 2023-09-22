@@ -13,9 +13,9 @@ function evenOddNumbers(input) {
     let currentNumber = Number(input.shift());
 
     if (i % 2 == 0) {
-        evenNumbers += currentNumber;
+      evenNumbers += currentNumber;
     } else {
-        oddNumbers += currentNumber;
+      oddNumbers += currentNumber;
     }
   }
   if (evenNumbers === oddNumbers) {
