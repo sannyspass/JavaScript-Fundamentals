@@ -4,15 +4,27 @@
 При равенство да се отпечатат "Yes" и на нов ред "Sum = " + сумата; иначе да се отпечата "No" и на нов ред "Diff = " + разликата. 
 Разликата се изчислява по абсолютна стойност. */
 
+function evenOddNumbers(input) {
+  let n = Number(input.shift());
+  let oddNumbers = 0;
+  let evenNumbers = 0;
 
-function solve(input) {
-    let n = Number(input.shift());
+  for (let i = 0; i < n; i++) {
     let currentNumber = Number(input.shift());
 
-    for (let i = 0; i < n; i++) {
-        
+    if (i % 2 == 0) {
+        evenNumbers += currentNumber;
+    } else {
+        oddNumbers += currentNumber;
     }
-
+  }
+  if (evenNumbers === oddNumbers) {
+    console.log(`Yes.`);
+    console.log(`Sum = ${evenNumbers}`);
+  } else {
+    console.log(`No.`);
+    console.log(`Diff = ${Math.abs(evenNumbers - oddNumbers)}.`);
+  }
 }
 
-solve([4, 10, 50, 60, 20]);
+evenOddNumbers([4, 3, 5, 1, -2]);

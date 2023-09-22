@@ -6,7 +6,7 @@
 function doubleSum(input) {
   let n = Number(input.shift());
   let leftSide = 0;
-  let rightSide = 0; 
+  let rightSide = 0;
   let wholeSum = 0;
   let differenceSum = 0;
 
@@ -14,27 +14,25 @@ function doubleSum(input) {
     let num = Number(input.shift());
 
     if (i < n) {
-        leftSide += num; 
+      leftSide += num;
     } else if (i > n) {
-        rightSide += num;
+      rightSide += num; //ne mi hvashta ednoto 50
     }
   }
 
-    if (leftSide === rightSide) {
-      wholeSum = leftSide;
-      console.log(`Yes, sum = ${wholeSum}.`);
-    } else if (leftSide !== rightSide) {
-      if (leftSide < rightSide) {
-        differenceSum = rightSide - leftSide;
-        console.log(`No, diff = ${differenceSum}.`);
-      } else if (leftSide > rightSide) {
-        differenceSum = leftSide - rightSide;
-        console.log(`No, diff = ${differenceSum}.`);
-      } else {
-        console.log(`error`);
-      }
+  if (leftSide === rightSide) {
+    wholeSum = leftSide;
+    console.log(`Yes, sum = ${wholeSum}.`);
+  } else if (leftSide !== rightSide) {
+    if (leftSide < rightSide) {
+      differenceSum = rightSide - leftSide;
+      console.log(`No, diff = ${differenceSum}.`);
+    } else if (leftSide > rightSide) {
+      differenceSum = leftSide - rightSide;
+      console.log(`No, diff = ${differenceSum}.`);
+    } else {
+      console.log(`error`);
     }
   }
-
-
+}
 doubleSum([2, 90, 9, 50, 50]);
