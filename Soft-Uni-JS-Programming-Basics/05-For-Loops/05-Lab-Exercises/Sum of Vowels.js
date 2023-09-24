@@ -7,11 +7,11 @@
 стойност 1 2 3 4 5 */
 
 function vowelSum(input) {
-  let text = String(input.shift());
+  let text = String(input.shift()).split("-");
 
   let wholeSum = 0;
 
-  for (let i = 0; i < text.length; i++) {
+  /*for (let i = 0; i < text.length; i++) {
     if (text[i] === "a") {
       wholeSum += 1;
     } else if (text[i] === "e") {
@@ -23,8 +23,25 @@ function vowelSum(input) {
     } else if (text[i] === "u") {
       wholeSum += 5;
     }
-  }
+  }*/
+  console.log(text);
+  text.forEach(letter => {
+    if (letter === "a") {
+      wholeSum += 1;
+    } else if (letter === "e") {
+      wholeSum += 2;
+    } else if (letter === "i") {
+      wholeSum += 3;
+    } else if (letter === "o") {
+      wholeSum += 4;
+    } else if (letter === "u") {
+      wholeSum += 5;
+    }
+  });
+
+
   console.log(wholeSum);
 }
 
-vowelSum(["hello"]);
+vowelSum(["h-e-l-l-o"]);
+

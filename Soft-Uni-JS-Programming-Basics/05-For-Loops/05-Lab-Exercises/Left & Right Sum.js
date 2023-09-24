@@ -15,15 +15,15 @@ function doubleSum(input) {
 
     if (i < n) {
       leftSide += num;
-    } else if (i > n) {
-      rightSide += num; //ne mi hvashta ednoto 50
+    } else /*if (i >= n)*/ { // =, vinagi hvashtai vsichki case-ove
+      rightSide += num; //ne mi hvashta ednoto 50, trqbva da se napishe =
     }
   }
 
   if (leftSide === rightSide) {
     wholeSum = leftSide;
     console.log(`Yes, sum = ${wholeSum}.`);
-  } else if (leftSide !== rightSide) {
+  } else /*if (leftSide !== rightSide)*/ {
     if (leftSide < rightSide) {
       differenceSum = rightSide - leftSide;
       console.log(`No, diff = ${differenceSum}.`);
