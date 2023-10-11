@@ -9,18 +9,17 @@ Remove trailing zeroes, if any (you can use parseFloat())
 
 The output should be printed to the console. Do not print insignificant decimals.*/
 
+function rounding(num1, num2) {
+  let number = num1;
+  let precision = num2;
 
-function rounding (num1, num2) {
-    let number = num1;
-    let precision = num2;
+  if (precision > 15) {
+    precision = 15;
+  }
 
-    if (precision > 15) {
-        precision = 15
-    }
+  let output = parseFloat(number.toFixed(precision));
 
-    let output = parseFloat(number.toFixed(precision));
-
-    console.log(output);
+  console.log(output);
 }
 
 rounding(3.1415926535897932384626433832795, 2);
