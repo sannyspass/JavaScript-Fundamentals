@@ -12,3 +12,15 @@ Print every row of the table in the following format:
 Constraints
 
 · The number will be an integer will be in the interval [1…100]*/
+
+function multiTable(input) {
+  let number = Number(input.shift());
+  let result = 0;
+
+  for (let counter = 1; counter <= 10; counter++) {
+    result = number * counter;
+    console.log(`${number} X ${counter} = ${result}`);
+  }
+}
+
+multiTable([5]);

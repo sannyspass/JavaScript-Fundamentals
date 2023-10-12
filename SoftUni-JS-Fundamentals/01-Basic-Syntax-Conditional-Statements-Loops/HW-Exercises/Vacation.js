@@ -29,7 +29,7 @@ function vacation(group, type, day) {
     totalPrice = studentsPrice * group;
     if (group >= 30) {
       discount = totalPrice * 0.15;
-      totalPrice = totalPrice - discount;
+      totalPrice -= discount;
     }
   } else if (type === "business") {
     switch (day) {
@@ -48,7 +48,7 @@ function vacation(group, type, day) {
     totalPrice = businessPrice * group;
     if (group >= 100) {
       discount = businessPrice * 10;
-      totalPrice = totalPrice - discount;
+      totalPrice -= discount;
     }
   } else if (type === "regular") {
     switch (day) {
@@ -67,7 +67,7 @@ function vacation(group, type, day) {
     totalPrice = regularPrice * group;
     if (group >= 10 && group <= 20) {
       discount = totalPrice * 0.05;
-      totalPrice = totalPrice - discount;
+      totalPrice -= discount;
     }
   }
   console.log(`Total price: ${totalPrice.toFixed(2)}`);

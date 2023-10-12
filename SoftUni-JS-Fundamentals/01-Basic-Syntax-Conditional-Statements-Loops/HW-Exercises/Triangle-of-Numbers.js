@@ -9,9 +9,24 @@ Constraints
 function triangle(input) {
   let number = Number(input.shift());
 
-  for (let i = 1; i <= number; i++) {
-    console.log(i);
+  for (let row = 1; row <= number; row++) {
+    console.log(`${row} `.repeat(row)); // .repeat() repeats the row.
   }
 }
 
 triangle([3]);
+
+/*function triangle(input) {
+  let number = Number(input.shift());
+  let output = "";
+
+  for (let row = 1; row <= number; row++) {
+    for (let column = 1; column <= row; column++) {
+      output += row + " ";
+    }
+    output += "\n";
+  }
+  console.log(output); 
+}
+
+triangle([3]);*/
