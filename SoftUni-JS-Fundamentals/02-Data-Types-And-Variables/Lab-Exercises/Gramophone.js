@@ -21,3 +21,13 @@ As output you should print the following message:
 "The plate was rotated {rotations} times."
 
 Rotations should be rounded up.*/
+
+function gramophone(band, album, song) {
+  let rotation = 2.5;
+  let songDuration = (album.length * band.length * song.length) / 2;
+  let songRotations = Math.ceil(songDuration / rotation);
+
+  console.log(`The plate was rotated ${songRotations} times.`);
+}
+
+gramophone("Black Sabbath", "Paranoid", "War Pigs");
