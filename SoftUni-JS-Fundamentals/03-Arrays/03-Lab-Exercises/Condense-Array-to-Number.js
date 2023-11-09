@@ -1,0 +1,1 @@
+/*Write a program which receives an array of numbers and condense them by summing adjacent couples of elements until a single number is obtained.*/
