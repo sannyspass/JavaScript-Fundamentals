@@ -14,15 +14,15 @@ Write a function that receives a grade between 2.00 and 6.00 and prints the corr
 
 function solveGrades(grade) {
   if (grade >= 2.0 && grade <= 2.99) {
-    return "Fail.";
+    console.log("Fail.");
   } else if (grade >= 3.0 && grade <= 3.49) {
-    return "Poor.";
+    console.log("Poor.");
   } else if (grade >= 3.5 && grade <= 4.49) {
-    return "Good.";
+    console.log("Good.");
   } else if (grade >= 4.5 && grade <= 5.49) {
-    return "Very good.";
+    console.log("Very good.");
   } else {
-    return "Excellent.";
+    console.log("Excellent.");
   }
 }
 
