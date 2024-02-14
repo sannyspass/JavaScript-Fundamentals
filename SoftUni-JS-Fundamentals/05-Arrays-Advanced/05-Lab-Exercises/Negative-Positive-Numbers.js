@@ -8,22 +8,29 @@ The input comes as array of number elements.
 The output is printed on the console, each element on a new line.*/
 
 function solve(inputArray) {
+  const result = [];
 
-    const result = [];
-
-    /*for (i = 0; i <= inputArray.length(); i++) {
+  /*for (i = 0; i <= inputArray.length(); i++) {
 
     }*/
 
-    inputArray.forEach(function(el){
-        if (el < 0) {
-            result.unshift(el);
-        } else {
-            result.push(el);
-        }
-    });
+  inputArray.forEach(function (el) {
+    if (el < 0) {
+      result.unshift(el);
+    } else {
+      result.push(el);
+    }
+  });
 
-    console.log(result.join("\n"));
+  console.log(result.join("\n"));
 }
 
 solve([7, -2, 8, 9]);
+
+/*arrayCats.forEach((catAge) => {
+  if (catAge < 1) {
+    console.log("kitten");
+  } else {
+    console.log("big catto");
+  }
+});*/

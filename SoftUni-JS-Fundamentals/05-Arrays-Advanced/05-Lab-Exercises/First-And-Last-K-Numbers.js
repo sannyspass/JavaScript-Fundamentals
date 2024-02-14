@@ -6,7 +6,14 @@ The input comes as array of number elements. The first element represents the nu
 
 The output is printed on the console on two lines. On the first line print the first k elements, separated by space. On the second line print the last k elements, separated by space.*/
 
+function solve(inputArray) {
+  let k = inputArray.shift();
+  let first = inputArray.slice(0, k);
+  let length = inputArray.length;
+  let last = inputArray.slice(length - k);
 
-function solve(inputArray) {}
+  console.log(first.join(" "));
+  console.log(last.join(" "));
+}
 
 solve([2, 7, 8, 9]);

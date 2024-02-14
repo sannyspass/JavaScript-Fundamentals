@@ -24,7 +24,17 @@ Angela Yu - Web Dev Bootcamp
 18. Control Statements For Loops
 
 
-SoftUni JS Programming Basics & Fundamentals
+SoftUni JS Programming Basics
+
+1. Simple Calculations and Operations
+2. Conditionals
+3. Nested Conditionals
+4. While Loops
+5. For Loops
+6. Nested Loops
+
+
+SoftUni JS Fundamentals
 
 1. Basic Syntax, Conditional Statements and Loops
 2. Data Types and Variables
@@ -41,3 +51,16 @@ SoftUni JS Programming Basics & Fundamentals
 13. Database Basics
 14. Regular Expressions
 15. Git and GitHub
+
+
+SoftUni JS Advanced
+
+1. Syntax, Functions and Statements
+2. Arrays and Nested Arrays
+3. Objects and Composition
+4. DOM Introduction
+5. DOM Manipulations and Events
+6. Advanced Functions
+7. Unit Testing and Error Handling
+8. Classes
+9. Prototypes and Inheritance
