@@ -1,5 +1,4 @@
-/*2:21
-5. Process Odd Numbers
+/*5. Process Odd Numbers
 
 You are given an array of numbers. Write a function that prints the elements at odd positions from the array, doubled and in reverse order.
 
@@ -24,3 +23,15 @@ Hints
 · We need to take these two elements and multiply them * 2
 
 · Finally, we print them on the console in reversed order*/
+
+function oddNumbers(input) {
+  let oddNumber = input
+    .filter((x, i) => i % 2 !== 0)
+    .map((x) => x * 2)
+    .reverse()
+    .join(" ");
+
+  console.log(oddNumber);
+}
+
+oddNumbers([3, 0, 10, 4, 7, 3]);

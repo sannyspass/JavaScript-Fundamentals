@@ -13,19 +13,18 @@ The input comes as two number arguments. The first element represents the number
 The output is printed on the console on a single line, separated by space.*/
 
 function sequence(n, k) {
-    const element = [1];
+  const element = [1];
 
-    for (let i = 1; i < n; i++) {
-        let target = i - k;
-        if (target < 0) {
-            target = 0;
-        }
-
+  for (let i = 1; i < n; i++) {
+    let target = i - k;
+    if (target < 0) {
+      target = 0;
     }
-
-
+    let sum = 0;
+    element.slice(target, i).forEach((x) => (sum += x));
+    element.push(sum);
+  }
+  console.log(element.join(" "));
 }
 
 sequence(6, 3);
-
-
